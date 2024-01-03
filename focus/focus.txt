@@ -1,0 +1,27 @@
+4. What are the tags used to create bulleted and numbered lists? *
+
+<ul></ul> tags for a bulleted list
+
+<ol></ol> for a numbered list.
+
+5. When is :: used instead of -> to access a method/variable in a class? *
+
+The -> object operator is used to access non-static methods of a class such as public methods. You would need a class instance to access these using the operator.
+
+The :: scope resolution operator is used for accessing static methods of a class. You don't need a class instance to access these.
+
+12. What is the value of $foo in the following code and why? <?php $foo = !!'foo'; ?> *
+
+$foo is true. It's true, because ! negates a value it is placed before and converts it to a boolean, so in this case it'd be false with !'foo'. Then placing another ! in front negates the false implying it should be true.
+
+14. What is the difference between "var" and "let" in javascript? *
+
+With redeclaration of variables, let in javascript cannot be redeclared in the same scope and will cause a syntax error. Var can be redeclared without errors.
+
+Regarding scope var can be used anywhere in a function, so if you use it in a conditional block inside a function you could access that variable outside of the conditional, you cannot do this with let.
+
+Var is pre-ES6 and let is ES6+ and is the recommended variable declaration.
+
+16. What is the difference between JOIN and INNER JOIN in SQL? *
+
+JOIN by default does INNER JOIN and both options will yield the same result. Semantically INNER JOIN is better to use as it makes the query more clear.
